@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Awe-Mans Website - About</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #sidebar {
+            float: left;
+            position: relative;
+            width: 150px;
+            background-color: #1d4ed8;
+            color: #ffffff;
+            padding: 15px;
+            min-height: 420px;
+            box-sizing: border-box;
+        }
+        #sidebar h2 {
+            color: #fde047;
+            font-size: 15px;
+            margin-top: 0;
+        }
+        #sidebar a {
+            display: block;
+            color: #ffffff;
+            margin-bottom: 8px;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+        #maincontent {
+            margin-left: 150px;
+            max-width: 600px;
+            padding: 20px;
+        }
+        #hiddenVisibility {
+            visibility: hidden;
+        }
+        #hiddenDisplay {
+            display: none;
+        }
+        #textblock {
+            width: 280px;
+        }
+        #aboutImg {
+            position: relative;
+            top: -20px;
+            left: -150px;
+            float: right;
+            border: 1px solid #d1d5db;
+        }
+    </style>
+    <script>
+        var sectionsVisible = false;
+
+        function toggleSections() {
+            var v = document.getElementById("hiddenVisibility");
+            var d = document.getElementById("hiddenDisplay");
+
+            if (sectionsVisible) {
+                v.style["visibility"] = "hidden";
+                d.style["display"] = "none";
+            } else {
+                v.style["visibility"] = "visible";
+                d.style["display"] = "block";
+            }
+
+            sectionsVisible = !sectionsVisible;
+        }
+    </script>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h2>Sidebar Navigation</h2>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div id="maincontent">
+        <h1>About Me</h1>
+        <p>Awe-Man is an original superhero who protects Emerald City. Origionally made
+            for a TTRPG campaign. He has the powers to wink and turn off another superpowered
+            person's powers. He tries to do his best saving the city and helping people.
+        </p>
+
+        <p id="hiddenVisibility" class="section">
+            Blam he winked and this things invisibility wore off.
+        </p>
+        <p id="hiddenDisplay" class="section">
+            Woah Woah Woah, how did he do that
+        </p>
+
+        <button onclick="toggleSections()">Toggle Visibility</button>
+
+        <div style="margin-top:15px;">
+            <img id="aboutImg" src="Ow6HRhSkCy3dsKA4HlWFykURjC4tAHsETOmfpHFj6ICMPIIIdNXtidPsNAns.png" alt="Awe-Man" style="width:150px;">
+            <div id="textblock">
+                Here is an image of him taking a selfie, super stylish and fun. Beware any evildoers as he will come and stop you.
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" style="clear:both;">
+        Website created by Bradley Adams
+    </div>
+
+</body>
+</html>

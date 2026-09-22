@@ -1,0 +1,113 @@
+/* Guitar World - shared styles (blue / white / yellow theme) */
+/* Layout modeled after the assignment's example screenshots */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+    color: #1a1a1a;
+}
+
+#header {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    padding: 18px 0 12px 0;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0 0 8px 0;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+#navbar {
+    background-color: #1d4ed8;
+}
+
+.navlink {
+    color: #fde047;
+    font-size: 15px;
+    text-decoration: underline;
+    margin: 0 8px;
+}
+
+.navlink:hover {
+    color: #ffffff;
+}
+
+#footer {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+#maincontent {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#maincontent > h1 {
+    font-size: 18px;
+}
+
+.section {
+    border: 1px solid #e2e2e2;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.section:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.highlight {
+    color: #1d4ed8;
+}
+
+button, input[type="submit"], input[type="button"] {
+    background-color: #fde047;
+    color: #1d4ed8;
+    border: 1px solid #1d4ed8;
+    padding: 7px 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #1d4ed8;
+    color: #fde047;
+}
+
+form div {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 6px;
+    border: 1px solid #d1d5db;
+    border-radius: 3px;
+    width: 260px;
+    box-sizing: border-box;
+}
+
+textarea {
+    vertical-align: top;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Awe-Mans Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function setMainBackground() {
+            var main = document.getElementById("maincontent");
+            main.style["background-color"] = "lightyellow";
+        }
+
+        function changeTextColor() {
+            var target = document.getElementById("colorTarget")
+            var c = target.style["color"]
+ 
+            if (c == "white") {
+                target.style["color"] = "blue"
+            }
+            else if (c == "blue") {
+                target.style["color"] = "yellow"
+            }
+            else {
+                target.style["color"] = "white"
+            }
+        }
+    </script>
+</head>
+<body onload="setMainBackground()">
+
+    <div id="header">
+        <h1><img src="AWeManEmoji.png" alt="Awe-Man icon" style="height:36px; vertical-align:middle; margin-right:8px;">Awe-Mans Website</h1>
+        <div id="navbar">
+            <a class="navlink" href="index.html">Home</a>
+            <a class="navlink" href="about.html">About</a>
+            <a class="navlink" href="portfolio.html">Portfolio</a>
+            <a class="navlink" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div id="maincontent">
+        <h1>Main Content Area</h1>
+
+        <div class="section" id="imgsection">
+            <img src="AWE-Man.jpg" alt="Awe-Man" style="float:left; width:110px; margin-right:15px; border:1px solid lightgray;">
+            <p>
+                Welcome to the Home of
+                <span style="font-weight:bold; color:blue;">Awe-Man</span>,
+                <span style="background-color:yellow; padding:0 3px;">Emerald City's finest superhero</span>.
+                This site contains known information about the superhero 
+                <span style="font-weight:bold; color:blue;">Awe-Man</span>,
+                a contact to him, and other fun stuff.
+            </p>
+        </div>
+
+        <div class="section highlight">
+            <p>A section for Awe-Man's favorite things.</p>
+            <div>Block 1: Helping People</div>
+            <div>Block 2: Saving the Day</div>
+            <div>Block 3: Teaming up with other Heroes</div>
+            <p>Here are some inline links to back this up:
+                <a href="#">Inline link 1</a>, <span>Inline span 2</span>
+            </p>
+        </div>
+
+        <div class="section" id="colorTarget" style="background-color:grey;">
+            <p>The color of this text is one of the colors of Awe-Man's Suit</p>
+            <button onclick="changeTextColor()">Change Text Color</button>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        Website created by Bradley Adams
+    </div>
+
+</body>
+</html>
